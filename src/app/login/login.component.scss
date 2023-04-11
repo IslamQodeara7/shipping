@@ -1,0 +1,13 @@
+.loginForm{
+    position: relative;
+    width: 40%;
+    margin: auto;
+}
+
+@media screen and (max-width:1024px) {
+
+.loginForm{
+    width: 100%;
+}
+
+}

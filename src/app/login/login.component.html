@@ -1,0 +1,27 @@
+
+<div class="mx-auto formContainer login my-5 p-5">
+    <h3 class="text-center">تسجيل الدخول</h3>
+    <form  class="loginForm p-3">
+       
+        <div class="mx-auto px-3">
+            <div class="inputContainer">
+                <input type="text" class="form-control" placeholder="البريد الالكتروني">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="inputContainer">
+                <input [type]="passwordEye" class="form-control" placeholder="كلمة السر">
+                <i *ngIf="passwordEyeCheck" (click)="passwordEye='password'; 
+                passwordEyeCheck=false;" class="fa-solid fa-eye-slash"></i>
+                <i *ngIf="!passwordEyeCheck" (click)="passwordEye='text'; passwordEyeCheck=true;"
+                 class="fa-solid fa-eye"></i>
+                
+            </div>
+        </div>
+        
+        
+    </form>
+    <div class="text-center my-5">
+        <a type="button" class="btn btn-outline-light">تسجيل الدخول <i class="fa-solid fa-user
+            mx-1"></i></a>
+    </div>
+</div>

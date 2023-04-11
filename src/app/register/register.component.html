@@ -1,0 +1,36 @@
+
+<div class="mx-auto formContainer register my-5 p-5">
+    <h3 class="text-center">انشاء حساب</h3>
+    <form  class="registerForm p-3">
+       
+        <div class="mx-auto px-3">
+            <div class="inputContainer">
+                <input type="text" class="form-control" placeholder="الاسم">
+                <i class="fa-solid fa-signature"></i>
+            </div>
+            <div class="inputContainer">
+                <input type="text" class="form-control" placeholder="رقم الهاتف">
+                <i class="fa-solid fa-mobile"></i>
+            </div>
+            <div class="inputContainer">
+                <input type="text" class="form-control" placeholder="البريد الالكتروني">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="inputContainer">
+                <input [type]="passwordEye" class="form-control" placeholder="كلمة السر">
+                <i *ngIf="passwordEyeCheck" (click)="passwordEye='password'; 
+                passwordEyeCheck=false;" class="fa-solid fa-eye-slash"></i>
+                <i *ngIf="!passwordEyeCheck" (click)="passwordEye='text'; passwordEyeCheck=true;"
+                 class="fa-solid fa-eye"></i>
+                
+            </div>
+        </div>
+        
+        
+    </form>
+    <div class="text-center my-5">
+        <a type="button" class="btn btn-outline-light">انشاء حساب جديد <i class="fa-solid fa-user-plus
+            mx-1"></i></a>
+    </div>
+</div>
+

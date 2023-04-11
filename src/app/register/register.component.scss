@@ -1,0 +1,15 @@
+@import '../../styles.scss';
+
+.registerForm{
+    position: relative;
+    width: 40%;
+    margin: auto;
+}
+
+@media screen and (max-width:1024px) {
+
+.registerForm{
+    width: 100%;
+}
+
+}
